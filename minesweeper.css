@@ -1,0 +1,114 @@
+#settings-button {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ddd;
+  border-radius: 2px;
+  border-top: 3px solid #eee;
+  border-left: 3px solid #eee;
+  border-bottom: 3px solid #888;
+  border-right: 3px solid #888;
+  display: flex;
+  align-self: center;
+}
+
+#game-container {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ddd;
+  border-radius: 2px;
+  border-top: 3px solid #eee;
+  border-left: 3px solid #eee;
+  border-bottom: 3px solid #888;
+  border-right: 3px solid #888;
+  min-width: 164px;
+}
+#game-header {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 2px;
+  border-top: 3px solid #888;
+  border-left: 3px solid #888;
+  border-bottom: 3px solid #eee;
+  border-right: 3px solid #eee;
+  min-width: 150px;
+}
+#game-body {
+  margin: 5px;
+  border-radius: 2px;
+  border-top: 3px solid #888;
+  border-left: 3px solid #888;
+  border-bottom: 3px solid #eee;
+  border-right: 3px solid #eee;
+  display: flex;
+  flex-direction: row;
+  min-width: 150px;
+  justify-content: center;
+}
+.game-body-col {
+  display:flex;
+  flex-direction: column;
+}
+.game-square {
+  width: 16px;
+  height: 16px;
+}
+.game-block           { background-image: url( "./img/block.png" ); }
+.game-block-pressed   { background-image: url( "./img/block-pressed.png" ); }
+.game-bomb            { background-image: url( "./img/bomb.png" ); }
+.game-bomb-red        { background-image: url( "./img/bomb-red.png" ); }
+.game-bomb-wrong      { background-image: url( "./img/bomb-wrong.png" ); }
+.game-flag            { background-image: url( "./img/flag.png" ); }
+.game-unknown         { background-image: url( "./img/unknown.png" ); }
+.game-unknown-pressed { background-image: url( "./img/unknown-pressed.png" ); }
+.game-num0 { background-image: url( "./img/block-pressed.png" ); }
+.game-num1 { background-image: url( "./img/num1.png" ); }
+.game-num2 { background-image: url( "./img/num2.png" ); }
+.game-num3 { background-image: url( "./img/num3.png" ); }
+.game-num4 { background-image: url( "./img/num4.png" ); }
+.game-num5 { background-image: url( "./img/num5.png" ); }
+.game-num6 { background-image: url( "./img/num6.png" ); }
+.game-num7 { background-image: url( "./img/num7.png" ); }
+.game-num8 { background-image: url( "./img/num8.png" ); }
+
+#smiley-container {
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+}
+.smiley-icon {
+  width: 26px;
+  height: 26px;
+}
+.img-smiley         { background-image: url( "./img/smiley.png" ); }
+.img-smiley-action  { background-image: url( "./img/smiley-action.png" ); }
+.img-smiley-lose    { background-image: url( "./img/smiley-lose.png" ); }
+.img-smiley-pressed { background-image: url( "./img/smiley-pressed.png" ); }
+.img-smiley-win     { background-image: url( "./img/smiley-win.png" ); }
+
+#mine-count, #timer {
+  flex: 0.4;
+}
+#mines100, #mines10, #mines1 {
+  float: left;
+}
+#timer100, #timer10, #timer1 {
+  float: right;
+}
+.menu-num {
+  width: 13px;
+  height: 23px;
+}
+.menu0 { background-image: url( "./img/menu0.png" ); }
+.menu1 { background-image: url( "./img/menu1.png" ); }
+.menu2 { background-image: url( "./img/menu2.png" ); }
+.menu3 { background-image: url( "./img/menu3.png" ); }
+.menu4 { background-image: url( "./img/menu4.png" ); }
+.menu5 { background-image: url( "./img/menu5.png" ); }
+.menu6 { background-image: url( "./img/menu6.png" ); }
+.menu7 { background-image: url( "./img/menu7.png" ); }
+.menu8 { background-image: url( "./img/menu8.png" ); }
+.menu9 { background-image: url( "./img/menu9.png" ); }

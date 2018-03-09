@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Minesweeper</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+          crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+          crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="modal fade" id="settings-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Game Configuration</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="diff-sel">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Height</th>
+                  <th>Width</th>
+                  <th>Mines</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diff-sel" id="diff-hard" value="hard" checked>
+                      <label class="form-check-label" for="diff-hard">Expert</label>
+                    </div>
+                  </td>
+                  <td>16</td>
+                  <td>30</td>
+                  <td>99</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diff-sel" id="diff-med" value="med">
+                      <label class="form-check-label" for="diff-med">Intermediate</label>
+                    </div>
+                  </td>
+                  <td>16</td>
+                  <td>16</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diff-sel" id="diff-easy" value="easy">
+                      <label class="form-check-label" for="diff-easy">Beginner</label>
+                    </div>
+                  </td>
+                  <td>9</td>
+                  <td>9</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="diff-sel" id="diff-custom" value="custom">
+                      <label class="form-check-label" for="diff-custom">Custom</label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="number" class="form-control input-settings" id="input-height">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="number" class="form-control input-settings" id="input-width">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="form-group">
+                      <input type="number" class="form-control input-settings" id="input-mines">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="new-game-button">New Game</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="game-container">
+    <div id="game-header">
+      <div id="mine-count">
+        <div id="mines100" class="menu-num menu0"></div>
+        <div id="mines10" class="menu-num menu0"></div>
+        <div id="mines1" class="menu-num menu0"></div>
+      </div>
+      <div id="smiley-container">
+        <div id="smiley-icon" class="smiley-icon img-smiley"></div>
+      </div>
+      <div id="timer">
+        <div id="timer1" class="menu-num menu0"></div>
+        <div id="timer10" class="menu-num menu0"></div>
+        <div id="timer100" class="menu-num menu0"></div>
+      </div>
+    </div>
+    <div id="game-body">
+      
+    </div>
+  </div>
+  
+  <button type="button" id="settings-button" data-toggle="modal" data-target="#settings-modal">
+    Settings
+  </button>
+</body>
+
+<script src="minesweeper.js"></script>
+<link rel="stylesheet" type="text/css" href="minesweeper.css">
+
+</html>

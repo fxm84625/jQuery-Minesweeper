@@ -27,4 +27,4 @@ http://minesweeperonline.com/
 - - Can Double-Click on a "2" if there are two flags surrounding it
 - Click on Smiley face to restart the game
 - Difficulty Selection, with Custom Map Size
-- First click is always not a Mine
+- First click is never a Mine

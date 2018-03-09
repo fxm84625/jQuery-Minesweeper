@@ -24,7 +24,7 @@ http://minesweeperonline.com/
 ### Additional Features:
 
 - Double-Click to reveal surrounding tiles, if there are a correct number of surrounding flags
- - Can Double-Click on a "2" if there are two flags surrounding it
+- - Can Double-Click on a "2" if there are two flags surrounding it
 - Click on Smiley face to restart the game
 - Difficulty Selection, with Custom Map Size
 - First click is always not a Mine
